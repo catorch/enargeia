@@ -58,7 +58,7 @@ module.exports = {
       },
       fontFamily: {
         sans: ["var(--font-sans)"],
-        primary: ["var(--font-primary)"],
+        primary: ["Zen Kaku Gothic Antique", "sans-serif"],
       },
     },
   },

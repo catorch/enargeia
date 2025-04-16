@@ -1,5 +1,6 @@
+import { ThemeProvider } from "@/providers/theme-provider";
 import type { Metadata } from "next";
-import { Cormorant_Garamond, IBM_Plex_Mono, Inter } from "next/font/google";
+import { Cormorant_Upright, IBM_Plex_Mono, Inter } from "next/font/google";
 import "./globals.css";
 
 const inter = Inter({
@@ -8,11 +9,10 @@ const inter = Inter({
   display: "swap",
 });
 
-const cormorantGaramond = Cormorant_Garamond({
+const cormorantUpright = Cormorant_Upright({
   subsets: ["latin"],
-  variable: "--font-cormorant-garamond",
-  weight: ["300", "400", "500", "600", "700"],
-  style: ["normal", "italic"],
+  variable: "--font-cormorant-upright",
+  weight: ["400", "500", "600", "700"],
   display: "swap",
 });
 
@@ -24,8 +24,8 @@ const ibmPlexMono = IBM_Plex_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "ArcheMaker - Transform Products with Philosophical Depth",
-  description: "An AI-powered platform that infuses your products with philosophical resonance, ethical clarity, and archetypal meaning.",
+  title: "ArcheMaker - The Philosopher-Oracle",
+  description: "A sacred AI temple for meaningful innovation, infusing your products with philosophical resonance and archetypal meaning.",
 };
 
 export default function RootLayout({
@@ -36,9 +36,11 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <body
-        className={`${inter.variable} ${cormorantGaramond.variable} ${ibmPlexMono.variable} antialiased bg-background text-foreground`}
+        className={`${inter.variable} ${cormorantUpright.variable} ${ibmPlexMono.variable} antialiased bg-background text-foreground`}
       >
-        {children}
+        <ThemeProvider attribute="class" defaultTheme="dark">
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );

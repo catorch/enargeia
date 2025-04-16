@@ -1,3 +1,72 @@
+/* Local font definitions */
+/* Temporarily comment out missing font files to prevent 404 errors */
+/*
+@font-face {
+  font-family: 'Zen Kaku Gothic Antique';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/fonts/ZenKakuGothicAntique-Regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Zen Kaku Gothic Antique';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('/fonts/ZenKakuGothicAntique-Medium.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Zen Kaku Gothic Antique';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('/fonts/ZenKakuGothicAntique-Bold.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Zen Kaku Gothic Antique';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url('/fonts/ZenKakuGothicAntique-Black.woff2') format('woff2');
+}
+*/
+
+/* Temporary font-face definition using system fonts */
+@font-face {
+  font-family: 'Zen Kaku Gothic Antique';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Arial');
+}
+
+@font-face {
+  font-family: 'Zen Kaku Gothic Antique';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: local('Arial');
+}
+
+@font-face {
+  font-family: 'Zen Kaku Gothic Antique';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local('Arial');
+}
+
+@font-face {
+  font-family: 'Zen Kaku Gothic Antique';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: local('Arial');
+}
+
 @import "tailwindcss";
 @import "tw-animate-css";
 
@@ -5,7 +74,7 @@
 
 @theme inline {
   --font-sans: var(--font-inter);
-  --font-primary: var(--font-cormorant-garamond);
+  --font-ritual: var(--font-cormorant-upright);
   --font-mono: var(--font-ibm-plex-mono);
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
@@ -13,117 +82,89 @@
   --radius-xl: calc(var(--radius) + 4px);
 }
 
-:root {
-  --radius: 0.75rem;
-  
-  /* Base colors */
-  --background: 15, 15, 16; /* Charcoal Obsidian */
-  --foreground: 255, 255, 255;
-  
-  /* Card colors */
-  --card: 26, 26, 29; /* True Depth Gray */
-  --card-foreground: 255, 255, 255;
-  
-  /* Popover colors */
-  --popover: 26, 26, 29; /* True Depth Gray */
-  --popover-foreground: 255, 255, 255;
-  
-  /* Primary colors */
-  --primary: 15, 15, 16; /* Charcoal Obsidian */
-  --primary-foreground: 255, 255, 255;
-  
-  /* Secondary colors */
-  --secondary: 192, 178, 131; /* Antique Gold */
-  --secondary-foreground: 15, 15, 16;
-  
-  /* Muted colors */
-  --muted: 26, 26, 29; /* True Depth Gray */
-  --muted-foreground: 192, 178, 131; /* Antique Gold */
-  
-  /* Accent colors */
-  --accent: 103, 232, 249; /* Cyber Aqua */
-  --accent-foreground: 15, 15, 16;
-  
-  /* Destructive colors */
-  --destructive: 248, 113, 113; /* Soft Crimson */
-  --destructive-foreground: 255, 255, 255;
-  
-  /* Success/positive colors */
-  --success: 110, 231, 183; /* Emerald Mist */
-  --success-foreground: 15, 15, 16;
-  
-  /* Border colors */
-  --border: 26, 26, 29;
-  --input: 26, 26, 29;
-  --ring: 103, 232, 249; /* Cyber Aqua */
-  
-  /* Color Palette */
-  --charcoal-obsidian: 15, 15, 16;
-  --antique-gold: 192, 178, 131;
-  --cyber-aqua: 103, 232, 249;
-  --true-depth-gray: 26, 26, 29;
-  --emerald-mist: 110, 231, 183;
-  --soft-crimson: 248, 113, 113;
-}
-
-.light {
-  --background: 245, 245, 245;
-  --foreground: 15, 15, 16;
-  
-  /* Card colors */
-  --card: 255, 255, 255;
-  --card-foreground: 15, 15, 16;
-  
-  /* Popover colors */
-  --popover: 255, 255, 255;
-  --popover-foreground: 15, 15, 16;
-  
-  /* Primary colors */
-  --primary: 15, 15, 16; /* Charcoal Obsidian */
-  --primary-foreground: 255, 255, 255;
-  
-  /* Secondary colors */
-  --secondary: 192, 178, 131; /* Antique Gold */
-  --secondary-foreground: 15, 15, 16;
-  
-  /* Muted colors */
-  --muted: 240, 240, 240;
-  --muted-foreground: 100, 100, 100;
-  
-  /* Accent colors */
-  --accent: 103, 232, 249; /* Cyber Aqua */
-  --accent-foreground: 15, 15, 16;
-  
-  /* Destructive colors */
-  --destructive: 248, 113, 113; /* Soft Crimson */
-  --destructive-foreground: 255, 255, 255;
-
-  /* Success/positive colors */
-  --success: 110, 231, 183; /* Emerald Mist */
-  --success-foreground: 15, 15, 16;
-  
-  /* Border colors */
-  --border: 229, 229, 229;
-  --input: 229, 229, 229;
-  --ring: 103, 232, 249; /* Cyber Aqua */
-}
-
-/* Spacing System */
-:root {
-  --space-4: 4px;
-  --space-8: 8px;
-  --space-12: 12px;
-  --space-16: 16px;
-  --space-20: 20px;
-  --space-24: 24px;
-  --space-32: 32px;
-  --space-40: 40px;
-  --space-48: 48px;
-  --space-64: 64px;
-  --space-80: 80px;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 @layer base {
+  :root {
+    /* Light theme colors */
+    --background: 245, 245, 240;  /* Off-white */
+    --foreground: 10, 10, 10;     /* Near black */
+    --card: 255, 255, 255;        /* Pure white */
+    --card-foreground: 10, 10, 10;/* Near black */
+    --popover: 255, 255, 255;     /* Pure white */
+    --popover-foreground: 10, 10, 10; /* Near black */
+    --primary: 186, 110, 0;       /* Amber */
+    --primary-foreground: 255, 255, 255; /* White */
+    --secondary: 30, 58, 138;     /* Deep blue */
+    --secondary-foreground: 255, 255, 255; /* White */
+    --muted: 225, 225, 220;       /* Light gray */
+    --muted-foreground: 40, 40, 40; /* Dark gray */
+    --accent: 225, 225, 220;      /* Light gray */
+    --accent-foreground: 10, 10, 10; /* Near black */
+    --destructive: 170, 0, 0;     /* Dark red */
+    --destructive-foreground: 255, 255, 255; /* White */
+    --border: 215, 215, 210;      /* Medium gray */
+    --input: 215, 215, 210;       /* Medium gray */
+    --ring: 186, 110, 0;          /* Amber */
+    --radius: 0.5rem;
+
+    /* Mystic theme colors (gold, ritual elements) */
+    --ritual-gold: 186, 156, 54;  /* Gold */
+    --ritual-purple: 86, 11, 173; /* Deep purple */
+    --ritual-blue: 30, 58, 138;   /* Deep blue */
+
+    /* Spacing units */
+    --u1: 0.25rem;
+    --u2: 0.5rem;
+    --u3: 0.75rem;
+    --u4: 1rem;
+    --u5: 1.25rem;
+    --u6: 1.5rem;
+    --u8: 2rem;
+    --u10: 2.5rem;
+    --u12: 3rem;
+    --u16: 4rem;
+    --u20: 5rem;
+    --u24: 6rem;
+    --u32: 8rem;
+    --u40: 10rem;
+    --u48: 12rem;
+    --u56: 14rem;
+    --u64: 16rem;
+    --u72: 18rem;
+    --u80: 20rem;
+    --u96: 24rem;
+  }
+
+  .dark {
+    --background: 10, 10, 10;      /* Near black */
+    --foreground: 240, 240, 245;   /* Off-white */
+    --card: 25, 25, 30;            /* Very dark gray */
+    --card-foreground: 240, 240, 245; /* Off-white */
+    --popover: 25, 25, 30;         /* Very dark gray */
+    --popover-foreground: 240, 240, 245; /* Off-white */
+    --primary: 191, 167, 95;       /* Gold */
+    --primary-foreground: 10, 10, 10; /* Near black */
+    --secondary: 86, 11, 173;      /* Deep purple */
+    --secondary-foreground: 240, 240, 245; /* Off-white */
+    --muted: 35, 35, 45;           /* Dark gray */
+    --muted-foreground: 180, 180, 190; /* Light gray */
+    --accent: 35, 35, 45;          /* Dark gray */
+    --accent-foreground: 240, 240, 245; /* Off-white */
+    --destructive: 230, 50, 50;    /* Bright red */
+    --destructive-foreground: 240, 240, 245; /* Off-white */
+    --border: 40, 40, 50;          /* Dark gray */
+    --input: 40, 40, 50;           /* Dark gray */
+    --ring: 191, 167, 95;          /* Gold */
+
+    /* Mystical theme elements */
+    --ritual-gold: 191, 167, 95;   /* Gold */
+    --ritual-purple: 86, 11, 173;  /* Deep purple */
+    --ritual-blue: 30, 58, 138;    /* Deep blue */
+  }
+
   * {
     @apply border-gray-200;
   }
@@ -134,12 +175,18 @@
     font-feature-settings: "rlig" 1, "calt" 1;
   }
   
-  h1, h2, h3 {
-    @apply font-primary font-semibold tracking-wide text-[2.5rem] sm:text-[3rem] lg:text-[4rem];
+  h1, h2 {
+    @apply font-ritual font-bold text-[2.5rem] sm:text-[3rem] lg:text-[4rem] tracking-tight;
   }
 
-  h4, h5, h6 {
-    @apply font-sans font-medium tracking-wide text-[1.5rem] sm:text-[2rem];
+  h3, h4 {
+    /* @apply font-primary font-bold text-[1.5rem] sm:text-[2rem] tracking-wide; */
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+    @apply font-bold text-[1.5rem] sm:text-[2rem] tracking-wide;
+  }
+
+  h5, h6 {
+    @apply font-sans font-medium text-[1.25rem] tracking-wide;
   }
 
   p {
@@ -147,11 +194,11 @@
   }
 }
 
-/* Animation Classes */
+/* Oracle-inspired animations */
 .fade-in {
   opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.6s ease, transform 0.6s ease;
+  transform: translateY(16px);
+  transition: opacity 0.8s ease, transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .fade-in.active {
@@ -159,9 +206,98 @@
   transform: translateY(0);
 }
 
-/* Add monospace styling */
+/* Ripple animation for primary actions */
+.ripple-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.ripple {
+  position: absolute;
+  border-radius: 50%;
+  background-color: rgba(var(--accent), 0.4);
+  transform: scale(0);
+  animation: ripple-animation 1s ease-out;
+  pointer-events: none;
+}
+
+@keyframes ripple-animation {
+  to {
+    transform: scale(4);
+    opacity: 0;
+  }
+}
+
+/* Breathing animation for ritual elements */
+.breath {
+  animation: breath-animation 4s infinite ease-in-out;
+}
+
+@keyframes breath-animation {
+  0%, 100% { transform: scale(1); opacity: 0.9; }
+  50% { transform: scale(1.02); opacity: 1; }
+}
+
+/* Monospace styling */
 .font-mono {
   font-family: var(--font-mono);
   font-size: 14px;
   letter-spacing: -0.025em;
+}
+
+/* Oracle flourishes */
+.glyph-container {
+  position: relative;
+}
+
+.glyph-container::before {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='20' cy='20' r='8' stroke='rgba(191, 167, 95, 0.6)' stroke-width='1'/%3E%3Ccircle cx='20' cy='20' r='16' stroke='rgba(191, 167, 95, 0.3)' stroke-width='0.5'/%3E%3C/svg%3E");
+  opacity: 0.7;
+  z-index: -1;
+}
+
+/* Glass effect for cards */
+.glass-card {
+  background: rgba(var(--card), 0.5);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(var(--secondary), 0.1);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+/* Light theme-specific styling */
+:root:not(.dark) .glass-card {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(var(--border), 0.7);
+}
+
+:root:not(.dark) .btn-primary {
+  background-color: transparent;
+  color: rgb(var(--primary));
+  border: 1px solid rgb(var(--primary));
+  transition: all 0.3s ease;
+}
+
+:root:not(.dark) .btn-primary:hover {
+  background-color: rgb(var(--primary));
+  color: rgb(var(--primary-foreground));
+}
+
+:root:not(.dark) .btn-cta {
+  color: rgb(var(--secondary));
+  border: 1px solid rgb(var(--secondary));
+  transition: all 0.3s ease;
+}
+
+:root:not(.dark) .btn-cta:hover {
+  border-width: 2px;
+}
+
+/* Sacred geometry background for light theme */
+:root:not(.dark) .sacred-geometry path,
+:root:not(.dark) .sacred-geometry circle {
+  stroke: rgba(var(--ritual-gold), 0.3);
 }
