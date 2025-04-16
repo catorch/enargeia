@@ -6,6 +6,7 @@
 @theme inline {
   --font-sans: var(--font-inter);
   --font-primary: var(--font-cormorant-garamond);
+  --font-mono: var(--font-ibm-plex-mono);
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
@@ -16,87 +17,95 @@
   --radius: 0.75rem;
   
   /* Base colors */
-  --background: 245, 241, 236;
-  --foreground: 51, 51, 51;
+  --background: 15, 15, 16; /* Charcoal Obsidian */
+  --foreground: 255, 255, 255;
   
   /* Card colors */
-  --card: 255, 255, 255;
-  --card-foreground: 46, 42, 94;
+  --card: 26, 26, 29; /* True Depth Gray */
+  --card-foreground: 255, 255, 255;
   
   /* Popover colors */
-  --popover: 255, 255, 255;
-  --popover-foreground: 46, 42, 94;
+  --popover: 26, 26, 29; /* True Depth Gray */
+  --popover-foreground: 255, 255, 255;
   
   /* Primary colors */
-  --primary: 46, 42, 94;
+  --primary: 15, 15, 16; /* Charcoal Obsidian */
   --primary-foreground: 255, 255, 255;
   
   /* Secondary colors */
-  --secondary: 209, 215, 224;
-  --secondary-foreground: 46, 42, 94;
+  --secondary: 192, 178, 131; /* Antique Gold */
+  --secondary-foreground: 15, 15, 16;
   
   /* Muted colors */
-  --muted: 245, 241, 236;
-  --muted-foreground: 108, 79, 136;
+  --muted: 26, 26, 29; /* True Depth Gray */
+  --muted-foreground: 192, 178, 131; /* Antique Gold */
   
   /* Accent colors */
-  --accent: 216, 185, 108;
-  --accent-foreground: 46, 42, 94;
+  --accent: 103, 232, 249; /* Cyber Aqua */
+  --accent-foreground: 15, 15, 16;
   
   /* Destructive colors */
-  --destructive: 220, 118, 118;
+  --destructive: 248, 113, 113; /* Soft Crimson */
   --destructive-foreground: 255, 255, 255;
+  
+  /* Success/positive colors */
+  --success: 110, 231, 183; /* Emerald Mist */
+  --success-foreground: 15, 15, 16;
+  
+  /* Border colors */
+  --border: 26, 26, 29;
+  --input: 26, 26, 29;
+  --ring: 103, 232, 249; /* Cyber Aqua */
+  
+  /* Color Palette */
+  --charcoal-obsidian: 15, 15, 16;
+  --antique-gold: 192, 178, 131;
+  --cyber-aqua: 103, 232, 249;
+  --true-depth-gray: 26, 26, 29;
+  --emerald-mist: 110, 231, 183;
+  --soft-crimson: 248, 113, 113;
+}
+
+.light {
+  --background: 245, 245, 245;
+  --foreground: 15, 15, 16;
+  
+  /* Card colors */
+  --card: 255, 255, 255;
+  --card-foreground: 15, 15, 16;
+  
+  /* Popover colors */
+  --popover: 255, 255, 255;
+  --popover-foreground: 15, 15, 16;
+  
+  /* Primary colors */
+  --primary: 15, 15, 16; /* Charcoal Obsidian */
+  --primary-foreground: 255, 255, 255;
+  
+  /* Secondary colors */
+  --secondary: 192, 178, 131; /* Antique Gold */
+  --secondary-foreground: 15, 15, 16;
+  
+  /* Muted colors */
+  --muted: 240, 240, 240;
+  --muted-foreground: 100, 100, 100;
+  
+  /* Accent colors */
+  --accent: 103, 232, 249; /* Cyber Aqua */
+  --accent-foreground: 15, 15, 16;
+  
+  /* Destructive colors */
+  --destructive: 248, 113, 113; /* Soft Crimson */
+  --destructive-foreground: 255, 255, 255;
+
+  /* Success/positive colors */
+  --success: 110, 231, 183; /* Emerald Mist */
+  --success-foreground: 15, 15, 16;
   
   /* Border colors */
   --border: 229, 229, 229;
   --input: 229, 229, 229;
-  --ring: 216, 185, 108;
-  
-  /* Color Palette */
-  --deep-indigo: 46, 42, 94;
-  --twilight-purple: 108, 79, 136;
-  --celestial-silver: 209, 215, 224;
-  --philosophical-beige: 245, 241, 236;
-  --mythic-gold: 216, 185, 108;
-  --sacred-rose: 220, 118, 118;
-}
-
-.dark {
-  --background: 46, 42, 94;
-  --foreground: 245, 241, 236;
-  
-  /* Card colors */
-  --card: 54, 49, 112;
-  --card-foreground: 245, 241, 236;
-  
-  /* Popover colors */
-  --popover: 54, 49, 112;
-  --popover-foreground: 245, 241, 236;
-  
-  /* Primary colors */
-  --primary: 209, 215, 224;
-  --primary-foreground: 46, 42, 94;
-  
-  /* Secondary colors */
-  --secondary: 76, 69, 133;
-  --secondary-foreground: 245, 241, 236;
-  
-  /* Muted colors */
-  --muted: 76, 69, 133;
-  --muted-foreground: 209, 215, 224;
-  
-  /* Accent colors */
-  --accent: 216, 185, 108;
-  --accent-foreground: 46, 42, 94;
-  
-  /* Destructive colors */
-  --destructive: 220, 118, 118;
-  --destructive-foreground: 255, 255, 255;
-  
-  /* Border colors */
-  --border: 255, 255, 255;
-  --input: 255, 255, 255;
-  --ring: 216, 185, 108;
+  --ring: 103, 232, 249; /* Cyber Aqua */
 }
 
 /* Spacing System */
@@ -125,8 +134,16 @@
     font-feature-settings: "rlig" 1, "calt" 1;
   }
   
-  h1, h2, h3, h4, h5, h6 {
-    @apply font-primary font-semibold tracking-wide;
+  h1, h2, h3 {
+    @apply font-primary font-semibold tracking-wide text-[2.5rem] sm:text-[3rem] lg:text-[4rem];
+  }
+
+  h4, h5, h6 {
+    @apply font-sans font-medium tracking-wide text-[1.5rem] sm:text-[2rem];
+  }
+
+  p {
+    @apply font-sans text-base sm:text-lg;
   }
 }
 
@@ -140,4 +157,11 @@
 .fade-in.active {
   opacity: 1;
   transform: translateY(0);
+}
+
+/* Add monospace styling */
+.font-mono {
+  font-family: var(--font-mono);
+  font-size: 14px;
+  letter-spacing: -0.025em;
 }

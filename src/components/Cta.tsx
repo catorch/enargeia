@@ -16,15 +16,15 @@ export default function Cta() {
     };
 
     return (
-        <section id="cta" className="py-20 bg-gradient-to-br from-primary to-[rgb(108,79,136)] text-white relative overflow-hidden">
+        <section id="cta" className="py-20 bg-gradient-to-br from-primary to-card text-white relative overflow-hidden">
             {/* Sacred geometry background */}
             <div className="sacred-geometry absolute inset-0 opacity-10 pointer-events-none">
                 <svg width="100%" height="100%" viewBox="0 0 800 800" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
-                    <circle cx="400" cy="400" r="300" fill="none" stroke="rgb(216, 185, 108)" strokeWidth="0.5" />
-                    <circle cx="400" cy="400" r="200" fill="none" stroke="rgb(216, 185, 108)" strokeWidth="0.5" />
-                    <circle cx="400" cy="400" r="100" fill="none" stroke="rgb(216, 185, 108)" strokeWidth="0.5" />
+                    <circle cx="400" cy="400" r="300" fill="none" stroke="rgb(192, 178, 131)" strokeWidth="0.5" />
+                    <circle cx="400" cy="400" r="200" fill="none" stroke="rgb(192, 178, 131)" strokeWidth="0.5" />
+                    <circle cx="400" cy="400" r="100" fill="none" stroke="rgb(192, 178, 131)" strokeWidth="0.5" />
                     <path d="M400 100 L400 700 M100 400 L700 400 M171 171 L629 629 M171 629 L629 171"
-                        stroke="rgb(216, 185, 108)" strokeWidth="0.5" />
+                        stroke="rgb(192, 178, 131)" strokeWidth="0.5" />
                 </svg>
             </div>
 
@@ -36,7 +36,7 @@ export default function Cta() {
                     </p>
                 </div>
 
-                <Card className="max-w-md mx-auto bg-white/10 backdrop-blur-md border-none shadow-xl">
+                <Card className="max-w-md mx-auto bg-card/80 backdrop-blur-md border-none shadow-xl">
                     <CardContent className="p-8">
                         {!submitted ? (
                             <>
@@ -56,7 +56,7 @@ export default function Cta() {
                                             onChange={(e) => setEmail(e.target.value)}
                                             required
                                             placeholder="your@email.com"
-                                            className="w-full px-4 py-2 bg-white/20 border border-white/30 rounded-md text-white placeholder:text-gray-300 focus:outline-none focus:ring-2 focus:ring-accent"
+                                            className="w-full px-4 py-2 bg-white/10 border border-white/30 rounded-md text-white placeholder:text-gray-300 focus:outline-none focus:ring-2 focus:ring-accent"
                                         />
                                     </div>
                                     <Button
@@ -69,8 +69,8 @@ export default function Cta() {
                             </>
                         ) : (
                             <div className="text-center py-6">
-                                <div className="w-16 h-16 bg-accent/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                                    <svg className="w-8 h-8 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <div className="w-16 h-16 bg-success/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                                    <svg className="w-8 h-8 text-success" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                                     </svg>
                                 </div>

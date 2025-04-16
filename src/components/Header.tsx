@@ -40,9 +40,9 @@ export default function Header() {
             <div className="container mx-auto px-6 flex justify-between items-center">
                 <Link href="/" className="flex items-center gap-2">
                     <svg className="w-10 h-10" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M20 5 L30 20 L20 35 L10 20 Z" fill="none" stroke="#D8B96C" strokeWidth="2" />
-                        <circle cx="20" cy="20" r="8" fill="none" stroke="#D8B96C" strokeWidth="2" />
-                        <circle cx="20" cy="20" r="4" fill="#D8B96C" />
+                        <path d="M20 5 L30 20 L20 35 L10 20 Z" fill="none" stroke="rgb(192, 178, 131)" strokeWidth="2" />
+                        <circle cx="20" cy="20" r="8" fill="none" stroke="rgb(192, 178, 131)" strokeWidth="2" />
+                        <circle cx="20" cy="20" r="4" fill="rgb(192, 178, 131)" />
                     </svg>
                     <span className="font-primary text-2xl font-semibold text-white">ArcheMaker</span>
                 </Link>
@@ -74,14 +74,14 @@ export default function Header() {
                             <span className="sr-only">Toggle menu</span>
                         </Button>
                     </SheetTrigger>
-                    <SheetContent side="right" className="bg-primary text-white p-0">
+                    <SheetContent side="right" className="bg-card text-white p-0">
                         <div className="flex flex-col h-full p-6">
                             <div className="flex justify-between items-center mb-8">
                                 <Link href="/" className="flex items-center gap-2">
                                     <svg className="w-8 h-8" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M20 5 L30 20 L20 35 L10 20 Z" fill="none" stroke="#D8B96C" strokeWidth="2" />
-                                        <circle cx="20" cy="20" r="8" fill="none" stroke="#D8B96C" strokeWidth="2" />
-                                        <circle cx="20" cy="20" r="4" fill="#D8B96C" />
+                                        <path d="M20 5 L30 20 L20 35 L10 20 Z" fill="none" stroke="rgb(192, 178, 131)" strokeWidth="2" />
+                                        <circle cx="20" cy="20" r="8" fill="none" stroke="rgb(192, 178, 131)" strokeWidth="2" />
+                                        <circle cx="20" cy="20" r="4" fill="rgb(192, 178, 131)" />
                                     </svg>
                                     <span className="font-primary text-xl font-semibold text-white">ArcheMaker</span>
                                 </Link>

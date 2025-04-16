@@ -48,25 +48,25 @@ export default function Hero() {
             {/* Sacred geometry background pattern */}
             <div className="sacred-geometry absolute inset-0 z-10 opacity-10 pointer-events-none">
                 <svg width="100%" height="100%" viewBox="0 0 800 800" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
-                    <circle cx="400" cy="400" r="300" fill="none" stroke="rgb(216, 185, 108)" strokeWidth="0.5" />
-                    <circle cx="400" cy="400" r="200" fill="none" stroke="rgb(216, 185, 108)" strokeWidth="0.5" />
-                    <circle cx="400" cy="400" r="100" fill="none" stroke="rgb(216, 185, 108)" strokeWidth="0.5" />
+                    <circle cx="400" cy="400" r="300" fill="none" stroke="rgb(192, 178, 131)" strokeWidth="0.5" />
+                    <circle cx="400" cy="400" r="200" fill="none" stroke="rgb(192, 178, 131)" strokeWidth="0.5" />
+                    <circle cx="400" cy="400" r="100" fill="none" stroke="rgb(192, 178, 131)" strokeWidth="0.5" />
                     <path d="M400 100 L400 700 M100 400 L700 400 M171 171 L629 629 M171 629 L629 171"
-                        stroke="rgb(216, 185, 108)" strokeWidth="0.5" />
+                        stroke="rgb(192, 178, 131)" strokeWidth="0.5" />
                 </svg>
             </div>
 
             {/* Background gradient */}
-            <div className="absolute inset-0 bg-gradient-to-br from-[rgb(46,42,94)] to-[rgb(75,40,110)] z-0"></div>
+            <div className="absolute inset-0 bg-gradient-to-br from-primary to-[rgb(26,26,29)] z-0"></div>
 
             {/* Hero background pattern */}
             <div className="hero-background absolute top-0 right-0 w-3/5 h-full opacity-10 z-0">
                 <svg width="100%" height="100%" viewBox="0 0 800 800" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
-                    <path fill="none" stroke="rgb(216, 185, 108)" strokeWidth="2"
+                    <path fill="none" stroke="rgb(192, 178, 131)" strokeWidth="2"
                         d="M400 400 A150 150 0 1 1 550 550 L400 400 A150 150 0 1 1 250 250 L400 400 A150 150 0 1 1 550 250 L400 400 A150 150 0 1 1 250 550 L400 400" />
-                    <circle cx="400" cy="400" r="150" fill="none" stroke="rgb(216, 185, 108)" strokeWidth="1" />
-                    <circle cx="400" cy="400" r="100" fill="none" stroke="rgb(216, 185, 108)" strokeWidth="1" />
-                    <circle cx="400" cy="400" r="50" fill="none" stroke="rgb(216, 185, 108)" strokeWidth="1" />
+                    <circle cx="400" cy="400" r="150" fill="none" stroke="rgb(192, 178, 131)" strokeWidth="1" />
+                    <circle cx="400" cy="400" r="100" fill="none" stroke="rgb(192, 178, 131)" strokeWidth="1" />
+                    <circle cx="400" cy="400" r="50" fill="none" stroke="rgb(192, 178, 131)" strokeWidth="1" />
                 </svg>
             </div>
 
@@ -84,7 +84,7 @@ export default function Hero() {
                         <Button asChild size="lg" className="bg-accent text-primary hover:bg-accent/90 hover:text-primary hover:translate-y-[-2px] transition-all shadow-lg hover:shadow-accent/30">
                             <Link href="#cta">Begin Your Journey</Link>
                         </Button>
-                        <Button asChild variant="outline" size="lg" className="border-white text-white hover:bg-white/10">
+                        <Button asChild variant="outline" size="lg" className="border-secondary text-secondary hover:bg-secondary/10">
                             <Link href="#features">Explore Features</Link>
                         </Button>
                     </div>
